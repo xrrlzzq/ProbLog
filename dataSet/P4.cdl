@@ -1,0 +1,9 @@
+double(X,Y):-single(X,Z), single(Z,W), single(W,Y).
+addi(X,Y):-double(X,Z), single(Z,Y).
+addi2(X,Y):-double(X,Y), double(Y,X).
+same(X,Y):-single(X,Z), single(Z,Y).
+single(0,1).
+single(1,2).
+single(2,0).
+single(2,'A b').
+single(3,3).
